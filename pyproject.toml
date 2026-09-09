@@ -1,0 +1,5 @@
+[project]
+name = "equipment-inspection-sync"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "展厅设备巡检同步骨架"
