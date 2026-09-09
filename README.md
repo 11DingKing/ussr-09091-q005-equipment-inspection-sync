@@ -1,13 +1,7 @@
-# 展厅设备巡检同步
+# 展厅设备离线巡检
 
-该项目记录展厅设备的巡检任务和现场读数，重点关注移动端离线期间产生的数据如何与服务端合并。设备身份和巡检模板属于基础资料，不能由同步请求随意改变。
+这是展厅设备离线巡检的基础工程。领域模型、输入边界和外部适配器分层保存，运行配置只来自环境变量。
 
-## 目录约定
+## 开发
 
-- `src/equipment_sync/domain.py`：设备、任务和同步状态类型。
-- `src/equipment_sync/`：同步协议、存储和趋势查询实现。
-- `tests/`：离线重放和冲突处理测试。
-
-## 运行
-
-Python 3.11+ 可执行 `python -m unittest discover -s tests`。运行时数据目录通过配置指定，仓库不保存设备密钥。
+需要 Node.js 20 或更高版本。执行 npm install --no-package-lock 后用 npm run build 检查 TypeScript，再用 npm test 运行基础场景。
